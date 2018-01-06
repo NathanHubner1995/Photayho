@@ -1,17 +1,20 @@
 import React, { Component } from 'react';
 import { Header, Image } from 'semantic-ui-react';
 import PhoFamily from '../Images/PhoFamily.jpg'
+import AdminHomeForm from './AdminHomeForm';
 
 
-class Home extends Component {
+class AdminHome extends Component {
   render() {
     return (
       <div>
-        <Header as='h1' textAlign='center'>Pho Tay Ho</Header>
-        <Image  src= {PhoFamily} fluid circular/>
+        <Header as='h1' textAlign='center'>Pho Tay Ho Admin</Header>
+
+        < AdminHomeForm />
       </div>
+
     );
   }
 }
 
-export default Home;
+export default AdminHome;
