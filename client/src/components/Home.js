@@ -1,11 +1,15 @@
 import React, { Component } from 'react';
-import { Header } from 'semantic-ui-react';
+import { Header, Image } from 'semantic-ui-react';
+import PhoFamily from '../Images/PhoFamily.jpg'
 
 
 class Home extends Component {
   render() {
     return (
-      <Header as='h1' textAlign='center'>Pho Tay Ho</Header>
+      <div>
+        <Header as='h1' textAlign='center'>Pho Tay Ho</Header>
+        <Image  src= {PhoFamily} fluid circular/>
+      </div>
     );
   }
 }

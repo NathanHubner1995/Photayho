@@ -6,7 +6,7 @@ class FoodMenu extends Component {
     return (
       <div>
         <Header as='h1' textAlign='center'>Pho Tay Ho Menu</Header>
-        <Header as='h3' textAlign='center'> Kids Size 3.75  Small Bowl - 6.50  Large Bowl - 7.50   To-Go - 8.00 </Header>
+        <Header as='h3' textAlign='center'> Kids Size 3.75   Small Bowl - 6.50   Large Bowl - 7.50    To Go - 8.00 </Header>
         <List>
           <List.Item as= 'h3'>
             <List.Icon name='food' />
@@ -38,6 +38,29 @@ class FoodMenu extends Component {
               <List.Description>Steak Flank Tendon Tripe</List.Description>
             </List.Content>
           </List.Item>
+
+          <List.Item as= 'h3'>
+            <List.Icon name='food' />
+            <List.Content>
+              <List.Header as='a'>Tain Nam Sach</List.Header>
+              <List.Description>Steak Flank and Tripe</List.Description>
+            </List.Content>
+          </List.Item>
+          <List.Item as= 'h3'>
+            <List.Icon name='food' />
+            <List.Content>
+              <List.Header as='a'>Chin Nam</List.Header>
+              <List.Description>Flank</List.Description>
+            </List.Content>
+          </List.Item>
+          <List.Item as= 'h3'>
+            <List.Icon name='food' />
+            <List.Content>
+              <List.Header as='a'>Chin Nam Gua</List.Header>
+              <List.Description>Brisket and Flank</List.Description>
+            </List.Content>
+          </List.Item>
+          
   </List>
 
 
