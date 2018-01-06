@@ -5,3 +5,23 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+names = ['Pho', 'Pho Bien', 'Pho Thai']
+descriptions = ['healthy', 'mild', 'bad']
+prices = ['2', '3', '4']
+
+# 10.times do
+#   Item.create(
+#     name: Faker::Food.dish,
+#     description: Faker::Food.description,
+#     price: Faker::Commerce.price.to_f
+#   )
+# end
+
+10.times do
+  Item.create(
+    name: names.sample,
+    description: descriptions.sample,
+    price: prices.sample
+  )
+end

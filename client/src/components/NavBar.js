@@ -15,10 +15,22 @@ class NavBar extends Component {
     if (user.id) {
       return (
         <Menu.Menu position='right'>
-          <Menu.Item
-            name='Logout'
-            onClick={() => dispatch(handleLogout(history))}
-          />
+            <div>
+            ADMIN
+            </div>
+            <Link to='/FoodMenu'>
+              <Menu.Item name='Menu' />
+            </Link>
+            <Link to='/order'>
+              <Menu.Item name='Order' />
+            </Link>
+            <Link to='/about'>
+              <Menu.Item name='About' />
+            </Link>
+            <Menu.Item
+              name='Logout'
+              onClick={() => dispatch(handleLogout(history))}
+            />
         </Menu.Menu>
       );
     }
