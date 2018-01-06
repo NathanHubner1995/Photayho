@@ -9,8 +9,9 @@ import ProtectedRoute from './ProtectedRoute';
 import AuthRoute from './AuthRoute';
 import FetchUser from './FetchUser';
 import { Switch, Route } from 'react-router-dom';
-import Menu from './Menu';
+import FoodMenu from './FoodMenu';
 import About from './About';
+import Order from './Order';
 
 
 
@@ -27,6 +28,9 @@ class App extends Component {
         <FetchUser>
           <Switch>
             <Route exact path='/' component={Home} />
+            <Route exact path='/About' component={About} />
+            <Route exact path='/Order' component={Order} />
+            <Route exact path='/FoodMenu' component={FoodMenu} />
             <AuthRoute exact path='/login' component={Login} />
             <AuthRoute exact path='/register' component={Register} />
             <Route component={NoMatch} />

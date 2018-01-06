@@ -3,6 +3,10 @@ import { Menu } from 'semantic-ui-react';
 import { Link, withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { handleLogout } from '../actions/auth';
+import FoodMenu from './FoodMenu';
+import About from './About';
+
+
 
 class NavBar extends Component {
   rightNavs = () => {
@@ -20,7 +24,7 @@ class NavBar extends Component {
     }
     return (
       <Menu.Menu position='right'>
-        <Link to='/menu'>
+        <Link to='/FoodMenu'>
           <Menu.Item name='Menu' />
         </Link>
         <Link to='/order'>

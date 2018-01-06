@@ -9,4 +9,4 @@ class About extends Component {
   }
 }
 
-export About;
+export default About;

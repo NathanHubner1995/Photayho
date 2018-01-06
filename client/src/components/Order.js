@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import { Header } from 'semantic-ui-react';
 
-class Home extends Component {
+class Order extends Component {
   render() {
     return (
-      <Header as='h1' textAlign='center'>Menu</Header>
+      <Header as='h1' textAlign='center'>Order</Header>
     );
   }
 }
 
-export Menu;
+export default Order;
